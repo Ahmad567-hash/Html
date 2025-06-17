@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<style>body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eef2f3;
+  margin: 0;
+  padding: 40px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+form div {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #34495e;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-left: 0px;
+  padding: 30px;
+  text-align:justify
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+</style>
+<body>
+    <h1>Form Submision</h1>
+    <form action="/submit.php"></form>
+    <div>
+        <label for="Ahmad">Ahmad</label> =
+        <input id="name" type="Texts" placeholder="enter Name ">
+    </div>
+    <br><br>
+    <div>
+        <label for="Phone">Phone</label>
+        <input id="Phone" type="tel" placeholder="number" required>
+    </div>
+    <br><br>
+    <div>
+        <label for="email">Email </label>
+        <input id="email" type="email" placeholder="Enter email" required>
+    </div>
+    <br><br>
+    <div>
+        <label for="Password">Password </label>
+        <input id="Password" type="Password" placeholder="Enter Password" required="true">
+    </div>
+    <br><br>
+    <div>
+        <label for="Date">Date </label>
+        <input id="Date" type="date" placeholder="datetime" required>
+    </div>
+        <br><br>
+    <div>
+        <h3>subscription</h3>
+        <label for="basic" aria-rowspan="2">basic</label>
+        <input id="basic" type="radio" name="subscription"value="basic">
+
+        
+        <label for="premium">premium</label>
+        <input id="premium" type="radio" name="subscription" value="premium">
+        
+
+        <label for="vip">vip</label>
+        <input id="vip" type="radio" name="subscription"value="vip">  
+    </div>
+    <br><br>
+    <div>
+        <input id="terms" type="checkbox" required>
+        <label for="terms">i agre to the terms of conditions</label>
+    </div>
+
+    <!-- textarea -->
+
+    <div>
+        <label for="comments">Comments</label>
+        <textarea id="comments" placeholder="type comments" rows="6"></textarea>
+    </div>
+    <br><br>
+    <div>
+        <button type="submit" >submit</button>
+    </div>
+    <br><br>
+    <br><br>
+    <div>  
+        <label for="Gender">Gender </label>
+        <select id="Gender" type="Gender" area-required>
+            <option value="disabled selected">Select Gender</option>
+            <option value=" Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="transgender">transgender</option>
+            <option value="mix">mix</option>
+
+        </select>
+        
+    </div>
+</body>
+
+</html>
